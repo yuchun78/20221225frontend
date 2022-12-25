@@ -10,10 +10,16 @@
     <form method="GET" action="https://book.niceinfos.com/frontend/assets/html_contact_form/api.php">
    
        <div>
-        <input type="text" name="account" value="" placeholder="請輸入帳號">
+        <label for="f-account">帳號</label>
+       </div>
+        <div>
+        <input type="text" name="account" id="f-account" value="" placeholder="請輸入帳號">
        </div>
        <div>
-        <input type="text" name="password" placeholder="請輸入密碼">
+        <label for="f-password">密碼</label>
+       </div>
+       <div>
+        <input type="text" name="password" id="f-password" placeholder="請輸入密碼">
        <div>
         <input type="number" name="auth" placeholder="請輸入驗證數字">
        </div>
@@ -29,9 +35,9 @@
             <option value="TP">台北</option>
             <option value="台中">台中</option>
             <option>高雄</option>
-            <div>ABBBBBBBBBBBBBBBBBBBBB</div>
         </select>
        </div>
+       <textarea name="remark" cols="30" rows="10" style="resize:none;"></textarea>
        <div>
         <button type="submit">發送</button>
         <button type="button">預覽</button>
